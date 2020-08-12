@@ -21,6 +21,7 @@ html, body{
 }
 
 .nav a {
+    display: inline-block;
     padding: .5em;
     color: white;
     text-decoration: none;
