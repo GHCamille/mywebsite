@@ -27,6 +27,13 @@ html, body{
     text-decoration: none;
 }
 
+.main-nav{
+    text-align: left;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255,255,255,0.3);
+}
+
 .nav a:hover{
     background-color: rgba(255,255,255,0.3);
 }
