@@ -3,10 +3,11 @@
     <head>
         <title>Camille Modeste | The Game</title>
         <meta name="description" content="This is Camille Modeste's website.">
+        <link rel="stylesheet" href="styles.css" />
     </head>
     <body>
-        <header>
-            <nav>
+        <header class="main-header">
+            <nav class="nav main-nav">
                 <ul>
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="about.html">ABOUT</a></li>
@@ -14,8 +15,7 @@
                     <li><a href="letmefinishyoursentence.html">LET ME FINISH YOUR SENTENCE</a></li>
                 </ul>
             </nav>
-            <hr>
-            <h1>Camille Modeste</h1>
+            <h1 class="full-name full-name-large">Camille Modeste</h1>
         </header>
         <section>
             <h2>PICK AN ICON AND DRAW IT</h2>
@@ -111,26 +111,27 @@
                 <button role="button">RATE</button>
             </div>
         </section>
-        
-        <footer>
-            <h3>Camille Modeste</h3>
-            <ul>
-                <li>
-                    <a href="https://www.kaggle.com/c/contradictory-my-dear-watson/" target="_blank">
-                        <img src="Images/kaggle_logo_black.png" width="30">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://github.com/GHCamille/mywebsite" target="_blank">
-                        <img src="Images/github_logo.png" width="30">
-                    </a>
-                </li>
-                <li>
-                    <a href="https://www.linkedin.com/in/cmodeste/" target="_blank">
-                        <img src="Images/linkedin_logo_black.png" width="30">
-                    </a>
-                </li>
-            </ul>
+        <footer class="main-footer">
+            <div class="container main-footer-container">
+            <h3 class="full-name">Camille Modeste</h3>
+                <ul class="nav footer-nav">
+                    <li>
+                        <a href="https://www.kaggle.com/c/contradictory-my-dear-watson/" target="_blank">
+                            <img src="Images/kaggle_logo_white.png" width="30">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://github.com/GHCamille/mywebsite" target="_blank">
+                            <img src="Images/github_logo.png" width="30">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.linkedin.com/in/cmodeste/" target="_blank">
+                            <img src="Images/linkedin_logo_white.png" width="30">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </footer>
     </body>
 </html>

@@ -59,14 +59,14 @@ html, body{
     text-align: left;
     padding-left: 2%;
     margin: 0;
-    font-size: 4em;
+    font-size: 1.5em;
     font-family: "Mermaid1001";
     font-weight: normal;
     color: white;
 }
 
 .full-name-large{
-    font-size: 4em;
+    font-size: 3em;
 }
 
 .content-section{
@@ -93,4 +93,29 @@ html, body{
     width: 300px;
     margin: 15px;
     border-radius: 50%;
+}
+
+.main-footer{
+    background-color:  rgb(0, 28, 62);
+    color: white;
+    padding: 0.25em 0;
+}
+
+.main-footer-container{
+    display: flex;
+    align-items: center;
+}
+
+.main-footer-container ul{
+    flex-grow: 1;
+    text-align: end;
+}
+
+.footer-nav li{
+    padding: 0 .5em;
+}
+
+.footer-nav img{
+    width: 30px;
+    height: 30px;
 }
