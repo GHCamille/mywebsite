@@ -86,3 +86,11 @@ html, body{
     text-align: center;
     font-size: 1.75em;
 }
+
+.about-image{
+    float: left;
+    height: 300px;
+    width: 300px;
+    margin: 15px;
+    border-radius: 50%;
+}
