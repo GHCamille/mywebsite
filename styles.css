@@ -12,8 +12,18 @@ html, body{
     padding: 0;
 }
 
-.nav main-nav ul{
+.nav ul{
     margin:0;
+}
+
+.nav li{
+    display: inline;
+}
+
+.nav a {
+    padding: .5em;
+    color: white;
+    text-decoration: none;
 }
 
 .main-header {
