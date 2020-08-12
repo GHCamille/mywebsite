@@ -71,3 +71,12 @@ html, body{
 .full-name-large{
     font-size: 4em;
 }
+
+.content-section{
+    margin: 1em;
+}
+
+.container{
+    max-width: 900px;
+    margin: 0 auto;
+}
