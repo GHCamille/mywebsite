@@ -1,5 +1,13 @@
 @import url('Fonts/calibri/Calibri.ttf');
 
+@font-face{
+    font-family: "Mermaid1001";
+    src: url('Fonts/mermaid/Mermaid1001.ttf') format('ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
 * {
     box-sizing: border-box;
     font-family: Calibri;
@@ -47,4 +55,19 @@ html, body{
     background-image: url('Images/banner.png');
     background-size: cover;
     padding-bottom: 30px;
+}
+
+
+.full-name{
+    text-align: left;
+    padding-left: 2%;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Mermaid1001";
+    font-weight: normal;
+    color: white;
+}
+
+.full-name-large{
+    font-size: 4em;
 }
