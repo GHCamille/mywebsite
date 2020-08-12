@@ -1,3 +1,24 @@
+@import url('Fonts/calibri/Calibri.ttf');
+
+* {
+    box-sizing: border-box;
+    font-family: Calibri;
+    color: #777;
+}
+
+
+html, body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav main-nav ul{
+    margin:0;
+}
+
 .main-header {
-    background-image: 'Images/banner.png';
+    background-color: rgb(0, 28, 62);
+    background-image: url('Images/banner.png');
+    background-size: cover;
+    padding-bottom: 30px;
 }
