@@ -154,3 +154,37 @@ html, body{
     width: 60px;
     height: 60px;
 }
+
+.experience-row{
+    border-bottom: 1px solid black;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+}
+
+
+.experience-row:last-child{
+    border-bottom: none;
+}
+
+.experience-item{
+    display: inline-block;
+    padding-right: .5em;
+}
+
+.experience-date{
+    color: #555;
+    font-weight: bold;
+    width: 11%;
+}
+
+.experience-city{
+    width: 24%;
+}
+
+.experience-role{
+    width: 42%;
+}
+
+.experience-btn{
+    max-width: 19%;
+}
