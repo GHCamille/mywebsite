@@ -266,6 +266,10 @@ html, body{
     width: 20%;
 }
 
+.rate-title{
+    width: 16%;
+}
+
 .rate-skills{
     width: 16%;
 }
@@ -282,6 +286,36 @@ html, body{
     width: 16%;
 }
 
-.rate-item-title{
-    
+.btn-danger{
+    height: 34px;
+    margin-left: 2em;
+    color: white;
+    background-color: #eb5757;
+    border: none;
+    border-radius: 0.3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover{
+    background-color: #cc4c4c;
+}
+
+.rate-input{
+    height: 34px;
+    width: 130px;
+    border-radius: 5px;
+    border: 1px solid  rgb(0, 28, 62);
+    background-color: #eee;    
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.rate-row:last-child{
+    border-bottom: 1px solid black;
+}
+
+.rate-row:last-child .rate-column{
+    border: none;
 }
