@@ -267,23 +267,28 @@ html, body{
 }
 
 .rate-title{
-    width: 16%;
+    width: 15%;
 }
 
 .rate-skills{
-    width: 16%;
+    width: 15%;
 }
 
 .rate-level{
-    width: 16%;
+    width: 15%;
 }
 
 .rate-accuracy{
-    width: 16%;
+    width: 15%;
 }
 
 .rate-time{
-    width: 16%;
+    width: 15%;
+}
+
+.rate-rate{
+    margin-left: 5px;
+    width: 4%;
 }
 
 .btn-danger{
