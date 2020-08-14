@@ -288,15 +288,16 @@ html, body{
 
 .rate-rate{
     margin-left: 5px;
-    width: 4%;
+    width: 5%;
 }
 
 .btn-danger{
     height: 34px;
-    margin-left: 2em;
+    width: 42px;
     color: white;
     background-color: #eb5757;
     border: none;
+    text-align: center;
     border-radius: 0.3em;
     font-weight: bold;
 }
@@ -323,4 +324,22 @@ html, body{
 
 .rate-row:last-child .rate-column{
     border: none;
+}
+
+.rate-average{
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.rate-average-title{
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.rate-average-rate{
+    color: black;
+    font-size: 1.1em;
 }
