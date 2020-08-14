@@ -343,3 +343,10 @@ html, body{
     color: black;
     font-size: 1.1em;
 }
+
+.btn-rate{
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+
+}
