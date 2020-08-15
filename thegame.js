@@ -17,6 +17,13 @@ function ready(){
         var input = rateInputs[i]
         input.addEventListener('change', quantityChanged)
     }
+
+    var selectPictureButtons = document.getElementsByClassName('game-item-button')
+    for (var i = 0; i < selectPictureButtons.length; i++){
+        var button = selectPictureButtons[i]
+        button.addEventListener('click', selectPictureButtonsClicked)
+    }
+
 }
 
 function removeRateItem(event){
@@ -31,6 +38,20 @@ function quantityChanged(event){
         input.value = 0
     }
     updateRateAverage()
+}
+
+function selectPictureButtonsClicked(event){
+    var button = event.target
+    var pictureItem = button.parentElement.parentElement
+    var title = pictureItem.getElementsByClassName('game-item-title')[0].innerText
+    var level = pictureItem.getElementsByClassName('game-item-level')[0].innerText
+    var imageSrc = pictureItem.getElementsByClassName('game-item-image')[0].src
+    addActivityToRating(title, level, imageSrc)
+    console.log(title, level, imageSrc)
+}
+
+function addActivityToRating(title, level, imageSrc){
+
 }
 
 function updateRateAverage(){
