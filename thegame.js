@@ -47,13 +47,19 @@ function selectPictureButtonsClicked(event){
     var level = pictureItem.getElementsByClassName('game-item-level')[0].innerText
     var imageSrc = pictureItem.getElementsByClassName('game-item-image')[0].src
     addActivityToRating(title, level, imageSrc)
-    console.log(title, level, imageSrc)
 }
 
 function addActivityToRating(title, level, imageSrc){
     var rateRow = document.createElement('div')
     rateRow.classList.add('rate-row')
     var rateItems = document.getElementsByClassName('rate-items')[0]
+    var rateItemNames = rateItems.getElementsByClassName('rate-title')
+    for (var i = 0; i < rateItemNames.length; i++){
+        if (rateItemNames[i].innerText == title){
+            alert('You have already selected this picture once.')
+            return
+        }
+    }
     var rateRowContents = `
         <div class="rate-skills rate-header rate-column">
             <span class="rate-title">${title}</span>
@@ -71,10 +77,16 @@ function addActivityToRating(title, level, imageSrc){
             <input class="rate-input" type="number" value="5">
         </div>
         <div class="rate-rate rate-header rate-column">
-            <button class="btn btn-danger" type="button">RATE </button>
+            <button class="btn btn-danger" type="button">RATE</button>
         </div>`
     rateRow.innerHTML = rateRowContents
     rateItems.append(rateRow)
+    rateRow.getElementsByClassName('btn-danger')[0].addEventListener('click', removeRateItem)
+    var rateInputs = rateRow.getElementsByClassName('rate-input')
+    for (var i = 0; i<rateInputs.length; i++) {
+        var input = rateInputs[i]
+        input.addEventListener('change', quantityChanged)
+    }
 }
 
 function updateRateAverage(){
