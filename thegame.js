@@ -24,6 +24,17 @@ function ready(){
         button.addEventListener('click', selectPictureButtonsClicked)
     }
 
+    document.getElementsByClassName('btn-rate')[0].addEventListener('click', rateCLicked)
+
+}
+
+function rateCLicked() {
+    alert('Thank you for rating my work !')
+    var rateItems = document.getElementsByClassName('rate-items')[0]
+    while (rateItems.hasChildNodes()){
+        rateItems.removeChild(rateItems.firstChild)
+    }
+    updateRateAverage()
 }
 
 function removeRateItem(event){
