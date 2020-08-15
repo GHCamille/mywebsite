@@ -51,6 +51,7 @@ function updateRateAverage(){
         total += parseFloat(skills) + parseFloat(accuracy) + parseFloat(time)
     }
     average = total / (3*(rateRows.length))
+    average = Math.round(average*100)/100
     document.getElementsByClassName('rate-average-rate')[0].innerText = average
 
 }
