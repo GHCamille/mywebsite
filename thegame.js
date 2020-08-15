@@ -119,6 +119,9 @@ function updateRateAverage(){
     }
     average = total / (3*(rateRows.length))
     average = Math.round(average*100)/100
+    if (isNaN(average)){
+        average = 0
+    }
     document.getElementsByClassName('rate-average-rate')[0].innerText = average
 
 }
