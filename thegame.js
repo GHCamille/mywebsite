@@ -38,12 +38,8 @@ function updateRateAverage(){
     var rateRows = rateItemsContainer.getElementsByClassName('rate-row')
     var total = parseFloat(0)
     var average = 0
-    console.log('rateRows = '&rateRows)
     for (var i = 0; i<rateRows.length; i++) {
-        console.log("Loop number = "+i)
-        console.log("total = "+total)
         var rateRow = rateRows[i]
-        console.log("rateRow.getElementsByClassName('rate-input') = "+rateRow.getElementsByClassName('rate-input')) 
         var rateInputsSkills = rateRow.getElementsByClassName('rate-input')[0]
         var rateInputsLevel = rateRow.getElementsByClassName('rate-input')[1]
         var rateInputsAccuracy = rateRow.getElementsByClassName('rate-input')[2]
@@ -54,8 +50,6 @@ function updateRateAverage(){
         var time = rateInputsTime.value
         total += parseFloat(skills) + parseFloat(accuracy) + parseFloat(time)
     }
-    console.log("total = "+total)
-    console.log("divided by = "+(3*rateRows.length))
     average = total / (3*(rateRows.length))
     document.getElementsByClassName('rate-average-rate')[0].innerText = average
 
