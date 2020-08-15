@@ -51,7 +51,30 @@ function selectPictureButtonsClicked(event){
 }
 
 function addActivityToRating(title, level, imageSrc){
-
+    var rateRow = document.createElement('div')
+    rateRow.classList.add('rate-row')
+    var rateItems = document.getElementsByClassName('rate-items')[0]
+    var rateRowContents = `
+        <div class="rate-skills rate-header rate-column">
+            <span class="rate-title">${title}</span>
+        </div>
+        <div class="rate-skills rate-column">
+            <input class="rate-input" type="number" value="5">
+        </div>
+        <div class="rate-level rate-column">
+            <input class="rate-input" type="number" value="${parseFloat(level.replace('Lvl ',''))}">
+        </div>
+        <div class="rate-accuracy rate-column">
+            <input class="rate-input" type="number" value="5">
+        </div>
+        <div class="rate-time rate-column ">
+            <input class="rate-input" type="number" value="5">
+        </div>
+        <div class="rate-rate rate-header rate-column">
+            <button class="btn btn-danger" type="button">RATE </button>
+        </div>`
+    rateRow.innerHTML = rateRowContents
+    rateItems.append(rateRow)
 }
 
 function updateRateAverage(){
