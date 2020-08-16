@@ -127,6 +127,14 @@ html, body{
     height: 30px;
 }
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    margin-bottom: 2em;
+  }
+
 .btn{
     text-align: center;
     vertical-align: middle;
@@ -180,8 +188,7 @@ html, body{
 
 .experience-photo{
     width: 11%;
-}
-
+}  
 
 .experience-date{
     color: #555;
