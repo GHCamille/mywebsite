@@ -178,6 +178,11 @@ html, body{
     padding-right: .5em;
 }
 
+.experience-photo{
+    width: 11%;
+}
+
+
 .experience-date{
     color: #555;
     font-weight: bold;
@@ -185,7 +190,7 @@ html, body{
 }
 
 .experience-city{
-    width: 17%;
+    width: 11%;
 }
 
 .experience-role{
