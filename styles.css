@@ -94,6 +94,15 @@ html, body{
     font-size: 1.75em;
 }
 
+.github-repo{
+    font-family: Georgia;
+    font-weight: bold;
+    color: #333;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+
 .about-image{
     float: left;
     height: 300px;
